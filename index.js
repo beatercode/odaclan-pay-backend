@@ -22,6 +22,8 @@ var task_checkPendingPayments = cron.schedule('*/2 * * * *', async () => {
     try {
         let _status = "pending";
         let payments = await Payment.find({ status: _status })
+        console.log("payments pending:")
+        console.log(payments)
 
         console.log("FOR [task_checkPendingPayments] N[" + payments.length + "] payments")
         payments.forEach(async payment => {
@@ -38,6 +40,8 @@ var task_checkSuccessPayments = cron.schedule('*/2 * * * *', async () => {
     try {
         let _status = "success";
         let payments = await Payment.find({ status: _status })
+        console.log("payments success:")
+        console.log(payments)
 
         console.log("FOR [task_checkSuccessPayments] N[" + payments.length + "] payments")
         payments.forEach(async payment => {

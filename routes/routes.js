@@ -30,7 +30,7 @@ app.get("/check-pending-payments", async (request, response) => {
     let _status = "pending";
     const payments = await Payment.find({ status: _status })
 
-    payments.forEach(payment => {
+    payments.forEach(async payment => {
         await checkPayment(payment)
     });
 
@@ -45,7 +45,7 @@ app.get("/check-success-payments", async (request, response) => {
     let _status = "success";
     const payments = await Payment.find({ status: _status })
 
-    payments.forEach(payment => {
+    payments.forEach(async payment => {
         await checkAndSendMail(payment)
     });
 
@@ -58,7 +58,7 @@ app.get("/check-success-payments", async (request, response) => {
 
 app.get("/clear-empty-link", async (request, response) => {
 
-    clearEmpytLink()
+    await clearEmpytLink()
 
     try {
         response.status(200).json({ success: true })
