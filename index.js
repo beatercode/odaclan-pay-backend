@@ -9,32 +9,43 @@ const port = 3010;
 
 var task_clearEmptyLink = cron.schedule('*/30 * * * *', async () => {
     console.log("RUN [task_clearEmptyLink]")
-
-    await clearEmpytLink()
+    try {
+        await clearEmpytLink()
+    } catch (err) {
+        console.log(err)
+    }
 
     console.log("END [task_clearEmptyLink]")
 });
 var task_checkPendingPayments = cron.schedule('*/2 * * * *', async () => {
     console.log("RUN [task_checkPendingPayments]")
-    let _status = "pending";
-    let payments = await Payment.find({ status: _status })
+    try {
+        let _status = "pending";
+        let payments = await Payment.find({ status: _status })
 
-    console.log("FOR [task_checkPendingPayments] N[" + payments.length + "] payments")
-    payments.forEach(async payment => {
-        await checkPayment(payment)
-    });
+        console.log("FOR [task_checkPendingPayments] N[" + payments.length + "] payments")
+        payments.forEach(async payment => {
+            await checkPayment(payment)
+        });
+    } catch (err) {
+        console.log(err)
+    }
     console.log("END [task_checkPendingPayments]")
 });
 
 var task_checkSuccessPayments = cron.schedule('*/2 * * * *', async () => {
     console.log("RUN [task_checkSuccessPayments]")
-    let _status = "success";
-    let payments = await Payment.find({ status: _status })
+    try {
+        let _status = "success";
+        let payments = await Payment.find({ status: _status })
 
-    console.log("FOR [task_checkSuccessPayments] N[" + payments.length + "] payments")
-    payments.forEach(async payment => {
-        await checkAndSendMail(payment)
-    });
+        console.log("FOR [task_checkSuccessPayments] N[" + payments.length + "] payments")
+        payments.forEach(async payment => {
+            await checkAndSendMail(payment)
+        });
+    } catch (err) {
+        console.log(err)
+    }
     console.log("END [task_checkSuccessPayments]")
 });
 
