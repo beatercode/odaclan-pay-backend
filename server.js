@@ -8,6 +8,7 @@ const Payment = require("./models/Payment");
 const checkPayment = require("./helper/checkPayments")
 const checkAndSendMail = require("./helper/mail")
 const clearEmpytLink = require("./helper/clearEmpytLink")
+const clearOldTx = require("./helper/clearOldTx")
 
 const app = express();
 
@@ -73,9 +74,27 @@ db.once("open", function () {
         console.log("END [task_checkSuccessPayments]")
     });
 
+    var task_clearOldTx = cron.schedule('*/1 * * * *', async () => {
+        console.log("RUN [task_clearOldTx]")
+        try {
+            let _status = "pending";
+            let payments = await Payment.find({ status: _status })
+
+            console.log("FOR [task_clearOldTx] N[" + payments.length + "] payments")
+            payments.forEach(async payment => {
+
+                await clearOldTx(payment)
+            });
+        } catch (err) {
+            console.log(err)
+        }
+        console.log("END [task_clearOldTx]")
+    });
+
     task_clearEmptyLink.start();
     task_checkPendingPayments.start();
     task_checkSuccessPayments.start();
+    task_clearOldTx.start();
 });
 
 app.use(Router);

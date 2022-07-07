@@ -119,10 +119,10 @@ const checkEVMToken = async (payment, endpoint, tokenContract) => {
             let txValue = Web3.utils.fromWei(x.value, 'ether')
             let txDate = x.timeStamp
 
-            console.log("Value:"); console.log(txValue)
-            console.log("Sent:"); console.log(new Date(txDate * 1000))
-            console.log("Max:"); console.log(fns.add(new Date(txDate * 1000), { hours: 3 }))
-            console.log("Now:"); console.log(new Date())
+            //console.log("Value:"); console.log(txValue)
+            //console.log("Sent:"); console.log(new Date(txDate * 1000))
+            //console.log("Max:"); console.log(fns.add(new Date(txDate * 1000), { hours: 3 }))
+            //console.log("Now:"); console.log(new Date())
 
             let isEnught = parseFloat(txValue) >= payment.toPayCrypto
             let isBefore = fns.isBefore(
