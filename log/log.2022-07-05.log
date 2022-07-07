@@ -1,0 +1,347 @@
+[2022-07-05T00:01:48.974] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:01:48.976] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:01:48.976] [INFO] default - https://hpr.co/
+[2022-07-05T00:01:49.014] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:01:49.014] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:02:26.723] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:02:26.724] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:02:26.724] [INFO] default - https://hpr.co/
+[2022-07-05T00:02:26.739] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:02:26.739] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:03:27.685] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:03:27.686] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:03:27.687] [INFO] default - https://hpr.co/
+[2022-07-05T00:03:27.712] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:03:27.712] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:04:02.418] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:04:02.418] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:04:02.418] [INFO] default - https://hpr.co/
+[2022-07-05T00:04:02.569] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:04:02.570] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:05:19.595] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:05:19.596] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:05:19.596] [INFO] default - https://hpr.co/
+[2022-07-05T00:05:19.750] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:05:19.750] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:06:26.695] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:06:26.702] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:06:26.702] [INFO] default - https://hpr.co/
+[2022-07-05T00:06:26.706] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-05T00:06:26.710] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:06:26.710] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:15:04.835] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:15:04.848] [INFO] default - [START] - Send Mail - Payment ID [62c3658041dc94f2a5e5ce57]
+[2022-07-05T00:15:05.165] [INFO] default - {
+  account: '225NawLvHbDOT9xiceG_m',
+  pinned: false,
+  nickname: 'Samurai Membership',
+  group_buy_guild: null,
+  require_product: null,
+  require_discord_login: false,
+  lock_to_user: null,
+  lock_to_discord: null,
+  password: null,
+  max_usages: 1,
+  active: true,
+  trial_period_days: null,
+  initial_fee_amount: null,
+  plan: {
+    integrations: { discord: [Object] },
+    transfers: { enabled: false, cooldown_days: 0, product: null },
+    waitlist: {
+      enabled: false,
+      collect_name: true,
+      trial_period_days: null,
+      initial_fee_amount: null,
+      questions: [Array],
+      collect_payment_method: false,
+      collect_eth_address: false,
+      collect_sol_public_key: false
+    },
+    top_ups: { enabled: false, discounts: [] },
+    reactivations: { enabled: false, cooldown_days: 0 },
+    account: '225NawLvHbDOT9xiceG_m',
+    active: true,
+    name: 'Samurai Membership CRYPTO',
+    image: 'https://cdn.hyper.co/2L37AgqnICV_dywTKP7BQ.jpeg',
+    description: 'Monthly Samurai Membership',
+    amount: 0,
+    rental_period_days: 31,
+    base_currency: null,
+    currency: 'usd',
+    recurring: null,
+    type: 'rental',
+    nft: null,
+    files: [],
+    created: 1656361095739,
+    links: [],
+    price: 'price_1LFONvHFbKvk63V0v6VYQQFo',
+    product: '91taoQHTvzmEGco7ahf5L',
+    id: '91taoQHTvzmEGco7ahf5L'
+  },
+  enable_bot_protection: false,
+  waitlist_entry: null,
+  created: 1656972905099,
+  remaining_stock: 1,
+  start_date: 1656972905099,
+  expiration_date: null,
+  out_of_stock: false,
+  id: 'T3gc3Yjfxl69LGEkUSRnD',
+  metadata: {}
+}
+[2022-07-05T00:15:05.167] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:15:05.167] [INFO] default - https://hpr.co/T3gc3Yjfxl69LGEkUSRnD
+[2022-07-05T00:15:05.168] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-05T00:15:05.171] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:15:05.172] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:15:05.172] [INFO] default - {
+  account: '225NawLvHbDOT9xiceG_m',
+  pinned: false,
+  nickname: 'Samurai Membership',
+  group_buy_guild: null,
+  require_product: null,
+  require_discord_login: false,
+  lock_to_user: null,
+  lock_to_discord: null,
+  password: null,
+  max_usages: 1,
+  active: true,
+  trial_period_days: null,
+  initial_fee_amount: null,
+  plan: {
+    integrations: { discord: [Object] },
+    transfers: { enabled: false, cooldown_days: 0, product: null },
+    waitlist: {
+      enabled: false,
+      collect_name: true,
+      trial_period_days: null,
+      initial_fee_amount: null,
+      questions: [Array],
+      collect_payment_method: false,
+      collect_eth_address: false,
+      collect_sol_public_key: false
+    },
+    top_ups: { enabled: false, discounts: [] },
+    reactivations: { enabled: false, cooldown_days: 0 },
+    account: '225NawLvHbDOT9xiceG_m',
+    active: true,
+    name: 'Samurai Membership CRYPTO',
+    image: 'https://cdn.hyper.co/2L37AgqnICV_dywTKP7BQ.jpeg',
+    description: 'Monthly Samurai Membership',
+    amount: 0,
+    rental_period_days: 31,
+    base_currency: null,
+    currency: 'usd',
+    recurring: null,
+    type: 'rental',
+    nft: null,
+    files: [],
+    created: 1656361095739,
+    links: [],
+    price: 'price_1LFONvHFbKvk63V0v6VYQQFo',
+    product: '91taoQHTvzmEGco7ahf5L',
+    id: '91taoQHTvzmEGco7ahf5L'
+  },
+  enable_bot_protection: false,
+  waitlist_entry: null,
+  created: 1656972905106,
+  remaining_stock: 1,
+  start_date: 1656972905106,
+  expiration_date: null,
+  out_of_stock: false,
+  id: '-nH5RG912eNJgWyEGEX4F',
+  metadata: {}
+}
+[2022-07-05T00:15:05.173] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:15:05.173] [INFO] default - https://hpr.co/-nH5RG912eNJgWyEGEX4F
+[2022-07-05T00:15:05.174] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-05T00:15:05.174] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:15:05.175] [INFO] default - [END] - Send Mail - Payment ID [62c3658041dc94f2a5e5ce57]
+[2022-07-05T00:15:52.541] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:15:52.562] [INFO] default - [START] - Send Mail - Payment ID [62c3658041dc94f2a5e5ce57]
+[2022-07-05T00:15:52.947] [INFO] default - {
+  account: '225NawLvHbDOT9xiceG_m',
+  pinned: false,
+  nickname: 'Samurai Membership',
+  group_buy_guild: null,
+  require_product: null,
+  require_discord_login: false,
+  lock_to_user: null,
+  lock_to_discord: null,
+  password: null,
+  max_usages: 1,
+  active: true,
+  trial_period_days: null,
+  initial_fee_amount: null,
+  plan: {
+    integrations: { discord: [Object] },
+    transfers: { enabled: false, cooldown_days: 0, product: null },
+    waitlist: {
+      enabled: false,
+      collect_name: true,
+      trial_period_days: null,
+      initial_fee_amount: null,
+      questions: [Array],
+      collect_payment_method: false,
+      collect_eth_address: false,
+      collect_sol_public_key: false
+    },
+    top_ups: { enabled: false, discounts: [] },
+    reactivations: { enabled: false, cooldown_days: 0 },
+    account: '225NawLvHbDOT9xiceG_m',
+    active: true,
+    name: 'Samurai Membership CRYPTO',
+    image: 'https://cdn.hyper.co/2L37AgqnICV_dywTKP7BQ.jpeg',
+    description: 'Monthly Samurai Membership',
+    amount: 0,
+    rental_period_days: 31,
+    base_currency: null,
+    currency: 'usd',
+    recurring: null,
+    type: 'rental',
+    nft: null,
+    files: [],
+    created: 1656361095739,
+    links: [],
+    price: 'price_1LFONvHFbKvk63V0v6VYQQFo',
+    product: '91taoQHTvzmEGco7ahf5L',
+    id: '91taoQHTvzmEGco7ahf5L'
+  },
+  enable_bot_protection: false,
+  waitlist_entry: null,
+  created: 1656972952823,
+  remaining_stock: 1,
+  start_date: 1656972952823,
+  expiration_date: null,
+  out_of_stock: false,
+  id: 'fXDn62Sep6Iss1VhKgksq',
+  metadata: {}
+}
+[2022-07-05T00:16:41.376] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-05T00:16:41.390] [INFO] default - [START] - Send Mail - Payment ID [62c3658041dc94f2a5e5ce57]
+[2022-07-05T00:16:41.692] [INFO] default - {
+  account: '225NawLvHbDOT9xiceG_m',
+  pinned: false,
+  nickname: 'Samurai Membership',
+  group_buy_guild: null,
+  require_product: null,
+  require_discord_login: false,
+  lock_to_user: null,
+  lock_to_discord: null,
+  password: null,
+  max_usages: 1,
+  active: true,
+  trial_period_days: null,
+  initial_fee_amount: null,
+  plan: {
+    integrations: { discord: [Object] },
+    transfers: { enabled: false, cooldown_days: 0, product: null },
+    waitlist: {
+      enabled: false,
+      collect_name: true,
+      trial_period_days: null,
+      initial_fee_amount: null,
+      questions: [Array],
+      collect_payment_method: false,
+      collect_eth_address: false,
+      collect_sol_public_key: false
+    },
+    top_ups: { enabled: false, discounts: [] },
+    reactivations: { enabled: false, cooldown_days: 0 },
+    account: '225NawLvHbDOT9xiceG_m',
+    active: true,
+    name: 'Samurai Membership CRYPTO',
+    image: 'https://cdn.hyper.co/2L37AgqnICV_dywTKP7BQ.jpeg',
+    description: 'Monthly Samurai Membership',
+    amount: 0,
+    rental_period_days: 31,
+    base_currency: null,
+    currency: 'usd',
+    recurring: null,
+    type: 'rental',
+    nft: null,
+    files: [],
+    created: 1656361095739,
+    links: [],
+    price: 'price_1LFONvHFbKvk63V0v6VYQQFo',
+    product: '91taoQHTvzmEGco7ahf5L',
+    id: '91taoQHTvzmEGco7ahf5L'
+  },
+  enable_bot_protection: false,
+  waitlist_entry: null,
+  created: 1656973001636,
+  remaining_stock: 1,
+  start_date: 1656973001636,
+  expiration_date: null,
+  out_of_stock: false,
+  id: 'FHx64nceZ1XKY0WInm7yT',
+  metadata: {}
+}
+[2022-07-05T00:16:41.694] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:16:41.694] [INFO] default - https://hpr.co/FHx64nceZ1XKY0WInm7yT
+[2022-07-05T00:16:41.695] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-05T00:16:41.703] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:16:41.709] [INFO] default - {
+  account: '225NawLvHbDOT9xiceG_m',
+  pinned: false,
+  nickname: 'Samurai Membership',
+  group_buy_guild: null,
+  require_product: null,
+  require_discord_login: false,
+  lock_to_user: null,
+  lock_to_discord: null,
+  password: null,
+  max_usages: 1,
+  active: true,
+  trial_period_days: null,
+  initial_fee_amount: null,
+  plan: {
+    integrations: { discord: [Object] },
+    transfers: { enabled: false, cooldown_days: 0, product: null },
+    waitlist: {
+      enabled: false,
+      collect_name: true,
+      trial_period_days: null,
+      initial_fee_amount: null,
+      questions: [Array],
+      collect_payment_method: false,
+      collect_eth_address: false,
+      collect_sol_public_key: false
+    },
+    top_ups: { enabled: false, discounts: [] },
+    reactivations: { enabled: false, cooldown_days: 0 },
+    account: '225NawLvHbDOT9xiceG_m',
+    active: true,
+    name: 'Samurai Membership CRYPTO',
+    image: 'https://cdn.hyper.co/2L37AgqnICV_dywTKP7BQ.jpeg',
+    description: 'Monthly Samurai Membership',
+    amount: 0,
+    rental_period_days: 31,
+    base_currency: null,
+    currency: 'usd',
+    recurring: null,
+    type: 'rental',
+    nft: null,
+    files: [],
+    created: 1656361095739,
+    links: [],
+    price: 'price_1LFONvHFbKvk63V0v6VYQQFo',
+    product: '91taoQHTvzmEGco7ahf5L',
+    id: '91taoQHTvzmEGco7ahf5L'
+  },
+  enable_bot_protection: false,
+  waitlist_entry: null,
+  created: 1656973001649,
+  remaining_stock: 1,
+  start_date: 1656973001649,
+  expiration_date: null,
+  out_of_stock: false,
+  id: 'iN2nbP1izMVsSD3PCoapG',
+  metadata: {}
+}
+[2022-07-05T00:16:41.710] [INFO] default - finalLinkUrl -> 
+[2022-07-05T00:16:41.710] [INFO] default - https://hpr.co/iN2nbP1izMVsSD3PCoapG
+[2022-07-05T00:16:41.710] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-05T00:16:41.711] [DEBUG] default - Will update DB record to completed
+[2022-07-05T00:16:41.738] [INFO] default - [END] - Send Mail - Payment ID [62c3658041dc94f2a5e5ce57]
+[2022-07-05T00:16:41.933] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]

@@ -1,0 +1,113 @@
+[2022-07-04T22:49:20.690] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:49:21.038] [INFO] default - {
+  account: '225NawLvHbDOT9xiceG_m',
+  pinned: false,
+  nickname: 'Samurai Membership',
+  group_buy_guild: null,
+  require_product: null,
+  require_discord_login: false,
+  lock_to_user: null,
+  lock_to_discord: null,
+  password: null,
+  max_usages: 1,
+  active: true,
+  trial_period_days: null,
+  initial_fee_amount: null,
+  plan: {
+    integrations: { discord: [Object] },
+    transfers: { enabled: false, cooldown_days: 0, product: null },
+    waitlist: {
+      enabled: false,
+      collect_name: true,
+      trial_period_days: null,
+      initial_fee_amount: null,
+      questions: [Array],
+      collect_payment_method: false,
+      collect_eth_address: false,
+      collect_sol_public_key: false
+    },
+    top_ups: { enabled: false, discounts: [] },
+    reactivations: { enabled: false, cooldown_days: 0 },
+    account: '225NawLvHbDOT9xiceG_m',
+    active: true,
+    name: 'Samurai Membership CRYPTO',
+    image: 'https://cdn.hyper.co/2L37AgqnICV_dywTKP7BQ.jpeg',
+    description: 'Monthly Samurai Membership',
+    amount: 0,
+    rental_period_days: 31,
+    base_currency: null,
+    currency: 'usd',
+    recurring: null,
+    type: 'rental',
+    nft: null,
+    files: [],
+    created: 1656361095739,
+    links: [],
+    price: 'price_1LFONvHFbKvk63V0v6VYQQFo',
+    product: '91taoQHTvzmEGco7ahf5L',
+    id: '91taoQHTvzmEGco7ahf5L'
+  },
+  enable_bot_protection: false,
+  waitlist_entry: null,
+  created: 1656967761050,
+  remaining_stock: 1,
+  start_date: 1656967761050,
+  expiration_date: null,
+  out_of_stock: false,
+  id: 'tFgCwcwqMTAwNeWtyx-U9',
+  metadata: {}
+}
+[2022-07-04T22:49:21.039] [INFO] default - finalLinkUrl -> 
+[2022-07-04T22:49:21.040] [INFO] default - https://hpr.co/tFgCwcwqMTAwNeWtyx-U9
+[2022-07-04T22:49:21.040] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T22:49:21.050] [DEBUG] default - Will update DB record to completed
+[2022-07-04T22:49:21.050] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:52:23.757] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:52:23.759] [INFO] default - finalLinkUrl -> 
+[2022-07-04T22:52:23.759] [INFO] default - https://hpr.co/
+[2022-07-04T22:52:23.762] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T22:52:23.770] [DEBUG] default - Will update DB record to completed
+[2022-07-04T22:52:23.770] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:52:47.625] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:52:47.627] [INFO] default - finalLinkUrl -> 
+[2022-07-04T22:52:47.628] [INFO] default - https://hpr.co/
+[2022-07-04T22:52:47.632] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T22:52:47.639] [DEBUG] default - Will update DB record to completed
+[2022-07-04T22:52:47.639] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:56:24.808] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:56:24.810] [INFO] default - finalLinkUrl -> 
+[2022-07-04T22:56:24.810] [INFO] default - https://hpr.co/
+[2022-07-04T22:56:24.813] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T22:56:24.819] [DEBUG] default - Will update DB record to completed
+[2022-07-04T22:56:24.819] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:57:18.708] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:57:18.710] [INFO] default - finalLinkUrl -> 
+[2022-07-04T22:57:18.710] [INFO] default - https://hpr.co/
+[2022-07-04T22:57:18.714] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T22:57:18.719] [DEBUG] default - Will update DB record to completed
+[2022-07-04T22:57:18.719] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:58:11.129] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:58:11.131] [INFO] default - finalLinkUrl -> 
+[2022-07-04T22:58:11.131] [INFO] default - https://hpr.co/
+[2022-07-04T22:58:11.135] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T22:58:11.142] [DEBUG] default - Will update DB record to completed
+[2022-07-04T22:58:11.142] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:59:12.420] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T22:59:12.421] [INFO] default - finalLinkUrl -> 
+[2022-07-04T22:59:12.421] [INFO] default - https://hpr.co/
+[2022-07-04T22:59:12.422] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T22:59:12.425] [DEBUG] default - Will update DB record to completed
+[2022-07-04T22:59:12.426] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T23:09:19.186] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T23:27:35.007] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T23:27:35.009] [INFO] default - finalLinkUrl -> 
+[2022-07-04T23:27:35.009] [INFO] default - https://hpr.co/
+[2022-07-04T23:27:35.011] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T23:27:35.015] [DEBUG] default - Will update DB record to completed
+[2022-07-04T23:27:35.015] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T23:44:30.548] [INFO] default - [START] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
+[2022-07-04T23:44:30.550] [INFO] default - finalLinkUrl -> 
+[2022-07-04T23:44:30.550] [INFO] default - https://hpr.co/
+[2022-07-04T23:44:30.555] [DEBUG] default - Im gonna send the EMAIL
+[2022-07-04T23:44:30.564] [DEBUG] default - Will update DB record to completed
+[2022-07-04T23:44:30.564] [INFO] default - [END] - Send Mail - Payment ID [62b6d40c11560ad1bdcb8605]
