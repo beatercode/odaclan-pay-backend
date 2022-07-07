@@ -149,36 +149,41 @@ const checkEVM = async (payment, endpoint) => {
         + "apikey=" + eth_api
 
     let txList = []
-    await fetch(finalUrl)
-        .then(res => res.json())
-        .then(res => txList = res.result)
+    try {
+        await fetch(finalUrl)
+            .then(res => res.json())
+            .then(res => txList = res.result)
 
-    if (txList == []) return
-    for await (let x of txList) {
-        if (x.from.toLowerCase() == payment.fromWallet.toLowerCase()) {
+        if (txList == []) return
+        for await (let x of txList) {
+            if (x.from.toLowerCase() == payment.fromWallet.toLowerCase()) {
 
-            let txStatus = x.txreceipt_status
-            if (!txStatus) return
-            let txValue = Web3.utils.fromWei(x.value, 'ether')
-            let txDate = x.timeStamp
-            /*
-            console.log("Sent:"); console.log(new Date(txDate * 1000))
-            console.log("Max:"); console.log(fns.add(new Date(txDate * 1000), { hours: 3 }))
-            console.log("Now:"); console.log(fns.add(new Date(), { hours: 2 }))
-            */
-            let isEnught = parseFloat(txValue) >= payment.toPayCrypto
-            let isBefore = fns.isBefore(
-                fns.add(new Date(), { hours: 2 }),
-                fns.add(new Date(txDate * 1000), { hours: 3 })
-            )
-            if (isBefore && isEnught) {
-                console.log("TX DONE")
-                const updates = await Payment.updateOne({ _id: payment._id }, { $set: { status: "success" } })
-                if (updates.modifiedCount == 0) return
-                checkAndSendMail(payment);
+                let txStatus = x.txreceipt_status
+                if (!txStatus) return
+                let txValue = Web3.utils.fromWei(x.value, 'ether')
+                let txDate = x.timeStamp
+                /*
+                console.log("Sent:"); console.log(new Date(txDate * 1000))
+                console.log("Max:"); console.log(fns.add(new Date(txDate * 1000), { hours: 3 }))
+                console.log("Now:"); console.log(fns.add(new Date(), { hours: 2 }))
+                */
+                let isEnught = parseFloat(txValue) >= payment.toPayCrypto
+                let isBefore = fns.isBefore(
+                    fns.add(new Date(), { hours: 2 }),
+                    fns.add(new Date(txDate * 1000), { hours: 3 })
+                )
+                if (isBefore && isEnught) {
+                    console.log("TX DONE")
+                    const updates = await Payment.updateOne({ _id: payment._id }, { $set: { status: "success" } })
+                    if (updates.modifiedCount == 0) return
+                    checkAndSendMail(payment);
+                }
+                break;
             }
-            break;
         }
+    } catch (err) {
+        console.log("[ERR] errore in checkPayments --->")
+        console.log(err)
     }
 }
 
