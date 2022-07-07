@@ -26,12 +26,12 @@ const checkAndSendMail = async (payment) => {
         body: JSON.stringify({ max_usages: 1, nickname: "Samurai Membership", plan: samuraHyperProductID })
     })
         .then(response => response.json())
-        .then(response => { linkId = response.id; logger.info(response) })
+        .then(response => { linkId = response.id; /* logger.info(response) */ })
         .catch(err => console.error(err));
 
     const finalLinkUrl = `https://hpr.co/${linkId}`
-    logger.info("finalLinkUrl -> ")
-    logger.info(finalLinkUrl)
+    //logger.info("finalLinkUrl -> ")
+    //logger.info(finalLinkUrl)
 
 
     console.log("user [" + senderEmailUser + "] pass [" + senderEmailPass + "]")
