@@ -183,6 +183,7 @@ const checkEVM = async (payment, endpoint) => {
         }
     } catch (err) {
         console.log("[ERR] errore in checkPayments --->")
+        console.log("[API URL]: " + finalUrl)
         console.log(err)
     }
 }
