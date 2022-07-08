@@ -27,7 +27,7 @@ db.on("error", console.error.bind(console, "connection error: "));
 db.once("open", function () {
     console.log("Connected successfully");
 
-    var task_clearEmptyLink = cron.schedule('*/30 * * * *', async () => {
+    var task_clearEmptyLink = cron.schedule('*/5 * * * *', async () => {
         console.log("RUN [task_clearEmptyLink]")
         try {
             await clearEmpytLink()
@@ -74,7 +74,7 @@ db.once("open", function () {
         console.log("END [task_checkSuccessPayments]")
     });
 
-    var task_clearOldTx = cron.schedule('*/1 * * * *', async () => {
+    var task_clearOldTx = cron.schedule('*/5 * * * *', async () => {
         console.log("RUN [task_clearOldTx]")
         try {
             let _status = "pending";
