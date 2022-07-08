@@ -52,7 +52,7 @@ const checkAndSendMail = async (payment) => {
         to: payment.mail,
         subject: emailSubject,
         text: 'Hi Kyodai! \nWe are happy to say we reviewd your payment application and you fullified the transaction! \n\n'
-            + 'Following is your personal link to get Samurai licence for ' + textPlan + ': ' + finalLinkUrl + ' \n\n'
+            + 'Following is your personal link to get Samurai licence for the ' + textPlan + ': ' + finalLinkUrl + ' \n\n'
             + 'Sincerely,\nODA Clan'
     };
 
