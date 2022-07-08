@@ -156,6 +156,7 @@ const checkEVM = async (payment, endpoint) => {
 
         if (txList == []) return
         for await (let x of txList) {
+            if (!x.from || x.from == "") return
             if (x.from.toLowerCase() == payment.fromWallet.toLowerCase()) {
 
                 let txStatus = x.txreceipt_status
