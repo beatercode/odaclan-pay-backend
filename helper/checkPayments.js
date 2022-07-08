@@ -141,12 +141,12 @@ const checkEVMToken = async (payment, endpoint, tokenContract) => {
 }
 
 const checkEVM = async (payment, endpoint) => {
-    const eth_api = process.env.ETHEREUM_API
+    const myApi = payment == "ETHEREUM" ? process.env.ETHEREUM_API : process.env.BSC_API
 
     let finalUrl = endpoint + "?module=account&action=txlist&"
         + "address=" + payment.toWallet + "&"
         + "startblock=0&endblock=99999999&sort=desc&"
-        + "apikey=" + eth_api
+        + "apikey=" + myApi
 
     let txList = []
     try {
