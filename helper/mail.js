@@ -7,13 +7,15 @@ const checkAndSendMail = async (payment) => {
 
     const senderEmailUser = process.env.SENDER_EMAIL_USR
     const senderEmailPass = process.env.SENDER_EMAIL_PASS
-    const samuraHyperProductID = process.env.SAMURAI_HYPER_PRODUCT_ID
+    const samuraiHyperProductID = process.env.SAMURAI_HYPER_PRODUCT_ID
+    const samuraiYearHyperProductID = process.env.SAMURAI_YEAR_HYPER_PRODUCT_ID
     const hyperAuthKey = process.env.HYPER_AUTH_KEY
     const emailSubject = 'ODA Clan DAO Payments Review'
 
     logger.info("[START] - Send Mail - Payment ID [" + payment._id + "]")
 
     let samuraiHyperLink = null
+    let selectedPlan = payment.plan == "yearly" ? samuraiYearHyperProductID : samuraiHyperProductID
 
     let linkId = ""
     await fetch('https://api.hyper.co/v6/links', {
@@ -23,7 +25,7 @@ const checkAndSendMail = async (payment) => {
             Authorization: hyperAuthKey,
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ max_usages: 1, nickname: "Samurai Membership", plan: samuraHyperProductID })
+        body: JSON.stringify({ max_usages: 1, nickname: "Samurai Membership", plan: selectedPlan })
     })
         .then(response => response.json())
         .then(response => { linkId = response.id; /* logger.info(response) */ })
@@ -43,12 +45,14 @@ const checkAndSendMail = async (payment) => {
         }
     });
 
+    let textPlan = payment.plan == "yearly" ? "yearly plan" : "monthly plan"
+
     const mailOptions = {
         from: "ODA Clan",
         to: payment.mail,
         subject: emailSubject,
         text: 'Hi Kyodai! \nWe are happy to say we reviewd your payment application and you fullified the transaction! \n\n'
-            + 'Following is your personal link to get Samurai licence: ' + finalLinkUrl + ' \n\n'
+            + 'Following is your personal link to get Samurai licence for " + textPlan + ": ' + finalLinkUrl + ' \n\n'
             + 'Sincerely,\nODA Clan'
     };
 
